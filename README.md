@@ -2,6 +2,7 @@
 
 ## Introduction
 The open.mp server project is a SA:MP server replacement, you can run your scripts with open.mp and your players are still able to join your server with SA:MP clients, but with a few differences on server side, which are explained below.  
+
 The open.mp server has undergone so many tests in the past few months, before and after the closed beta testing phase where we picked people to help us privately; 
 but now open.mp has entered a new phase and we're finally going for a public beta release so everyone can participate by finding any remaining unknown issues.  
 
