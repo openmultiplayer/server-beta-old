@@ -1,4 +1,4 @@
-# How you can help us with testing
+# open.mp server open beta test
 
 ## Introduction
 open.mp server has been under so many tests for past few months, before and after first beta testing phase where we picked people to help us privately;  
