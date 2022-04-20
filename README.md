@@ -18,7 +18,9 @@ While an aim of this project is close feature parity with the existing SA:MP ser
 
 ## Where do I start?
 You can start by going to [Releases](https://github.com/openmultiplayer/server-beta/releases) to download the **latest** beta version to test your scripts with.  
-You can easily set up your server as it's almost like how the SA:MP server works but with some small differences if you want to do things our way (we still support the way SA:MP works with `server.cfg` and its file structure, having gamemodes, filterscripts and scriptfiles folders for example)
+You can easily set up your server as it's almost like how the SA:MP server works but with some small differences if you want to do things our way (we still support the way SA:MP works with `server.cfg` and its file structure, having gamemodes, filterscripts and scriptfiles folders for example).
+
+**The Windows build requires the [Microsoft Visual C++ Redistributable 2015-2019](https://aka.ms/vs/17/release/vc_redist.x86.exe).**
 
 ## What am I supposed to do as a tester and how can I help?
 Firstly, what we want is for you to slowly port your gamemodes and scripts to open.mp, which you normally shouldn't have issues with unless you have memory hacking plugins or we haven't added support for the needed features yet (we have over 150 YSF natives already built in and the rest are coming as well). By running your script with open.mp and connecting to it, you can see if there are any differences and behaviour changes and report them to us properly by giving us enough information to reproduce and fix the issue.
