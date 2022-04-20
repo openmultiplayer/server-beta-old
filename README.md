@@ -8,8 +8,6 @@ but now open.mp has entered a new phase and we're finally going for a public bet
 
 The open.mp server has been tested extensively in production for months on a Romanian server with a 1000 player daily peak called [nephrite.ro](https://nephrite.ro/) and so far it has been a great experience for us. Performance wise open.mp has been great and results in vastly improved performance and stability over the SA:MP server.
 
-Please read below in order to figure out how you can be helpful with open.mp server beta testing:
-
 ## Compatibility
 While an aim of this project is close feature parity with the existing SA:MP server to make porting easy (before we can start doing more interesting things, of which we have many many ideas), 100% compatibility is impossible for one simple reason - the SA:MP server has bugs*.  Reproducing the bugs is silly - another aim of the project is fixing and improving upon the server.  Those aims must thus be balanced and while we believe we have done an excellent job maintaining backwards-compatibility there are a few areas where the original behaviour was not quite right (or just downright broken) and we have taken the lead from fixes.inc in terms of semantics.  You can view the fixes.inc readme if you want a full list of these changes (those of you already using that include can now remove it), but a few notable ones brought up repeatedly are:
 
