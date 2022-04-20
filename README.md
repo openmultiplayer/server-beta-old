@@ -2,15 +2,7 @@
 
 ## Introduction
 
-Welcome to the beta testing team. This repository is for us a way to log any kind of issues related to open.mp server.
-
-## Before you create an issue
-
-1. Go to https://github.com/openmultiplayer/server-beta-test/issues 
-2. Use the integrated search input field to make sure that your issue has not been posted yet.
-
-## When you proceed to post an issue
-
-1. Visit https://github.com/openmultiplayer/server-beta-test/issues/new/choose
-2. Select "open.mp Server Bug Report", "Different Behavior Compared To SA:MP Server".
-3. Use this template and fill it out with information relevant to this issue.
+open.mp server has been under so many tests for past few months, before and after first beta testing phase where we picked people to help us privately;  
+But now open.mp has entered a totally new phase and here we are going for a public beta release so everyone can participate with remaining unknown issues.  
+Here is a page you better read before start your beta testing efforts on open.mp  
+[How I can help and where do I start?](https://github.com/openmultiplayer/server-beta/blob/master/HOWTOHELP.md)
