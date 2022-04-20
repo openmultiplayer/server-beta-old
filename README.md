@@ -8,6 +8,14 @@ The open.mp server has been tested extensively in production (and still is) for 
 
 Please read below in order to figure out how you can be helpful with open.mp server beta testing:
 
+## Compatibility
+While an aim of this project is close feature parity with the existing SA:MP server to make porting easy (before we can start doing more interesting things, of which we have many many ideas), 100% compatibility is impossible for one simple reason - the SA:MP server has bugs*.  Reproducing the bugs is silly - another aim of the project is fixing and improving upon the server.  Those aims must thus be balanced and while we believe we have done an excellent job maintaining backwards-compatibility there are a few areas where the original behaviour was not quite right (or just downright broken) and we have taken the lead from fixes.inc in terms of semantics.  You can view the fixes.inc readme if you want a full list of these changes (those of you already using that include can now remove it), but a few notable ones brought up repeatedly are:
+
+* Pool size functions now return `-1` when there are no entries.
+* Deprecated functions are properly deprecated.
+
+\* All software has bugs, including this server, that's not a slight against SA:MP specifically.
+
 ## Where do I start?
 You can start by going to [Releases](https://github.com/openmultiplayer/server-beta/releases) to download the **latest** beta version to test your scripts with.  
 You can easily set up your server as it's almost like how the SA:MP server works but with some small differences if you want to do things our way (we still support the way SA:MP works with `server.cfg` and its file structure, having gamemodes, filterscripts and scriptfiles folders for example)
