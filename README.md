@@ -24,6 +24,8 @@ You can easily set up your server as it's almost like how the SA:MP server works
 
 **The Windows build requires the [Microsoft Visual C++ Redistributable 2015-2019](https://aka.ms/vs/17/release/vc_redist.x86.exe).**
 
+**YSF implemented natives:** https://gist.github.com/AmyrAhmady/94a33fc502c2694032523969e7d2ee02
+
 ## What am I supposed to do as a tester and how can I help?
 Firstly, what we want is for you to slowly port your gamemodes and scripts to open.mp, which you normally shouldn't have issues with unless you have memory hacking plugins or we haven't added support for the needed features yet (we have over 150 YSF natives already built in and the rest are coming as well). By running your script with open.mp and connecting to it, you can see if there are any differences and behaviour changes and report them to us properly by giving us enough information to reproduce and fix the issue.
 
