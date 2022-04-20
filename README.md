@@ -4,7 +4,7 @@
 The open.mp server has undergone so many tests in the past few months, before and after the closed beta testing phase where we picked people to help us privately; 
 but now open.mp has entered a new phase and we're finally going for a public beta release so everyone can participate by finding any remaining unknown issues.  
 
-The open.mp server has been tested extensively in production (and still is) for months on a Romanian server with a 1000 player daily peak called [nephrite.ro](https://nephrite.ro/) and so far it has been a great experience for us. Performance wise open.mp has been great and results in vastly improved performance and stability over the SA:MP server.
+The open.mp server has been tested extensively in production for months on a Romanian server with a 1000 player daily peak called [nephrite.ro](https://nephrite.ro/) and so far it has been a great experience for us. Performance wise open.mp has been great and results in vastly improved performance and stability over the SA:MP server.
 
 Please read below in order to figure out how you can be helpful with open.mp server beta testing:
 
