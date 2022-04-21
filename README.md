@@ -80,7 +80,7 @@ omp-server.exe --write-config
 
 ### **SA:MP way of running your server, legacy support**
 If you want to go with the way SA:MP works, all you have to do is drop your file structure in your open.mp server folder (or your open.mp files in your SA:MP server root folder), and it will read your `server.cfg` and load your scripts from the `gamemodes` and `filterscripts` folders, and also load legacy plugins from your `plugins` folder. Please note that memory hacking plugins won't work but the commonly used ones should be fine. (i.e: sscanf, streamer, MySQL, discord-connector, crashdetect, etc.)  
-We're working on adding our own versions of most known memory hacking plugins too. (i.e: remaining YSF features, pawn.cmd, pawn.raknet)
+We're working on adding our own versions of most known memory hacking plugins too. (i.e: remaining YSF features, pawn.cmd, pawn.raknet, FCNPC and etc)
 
 ## Report bugs and behaviour differences
 You can do that by creating issues in [issues](https://github.com/openmultiplayer/server-beta/issues) but keep in mind you are supposed to use the pre-made templates as much as possible.
