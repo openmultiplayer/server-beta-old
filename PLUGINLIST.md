@@ -1,3 +1,4 @@
 ## Converted plugin list
 
-- Pawn.CMD: https://github.com/katursis/Pawn.CMD/releases/tag/3.3.6-omp
+- Pawn.CMD (those that are marked for omp or open.mp): https://github.com/katursis/Pawn.CMD/releases/
+- sampvoice: https://github.com/AmyrAhmady/sampvoice/releases
