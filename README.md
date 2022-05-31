@@ -22,7 +22,7 @@ You can easily set up your server as it's almost like how the SA:MP server works
 
 **The Windows build requires the [Microsoft Visual C++ Redistributable 2015-2019](https://aka.ms/vs/17/release/vc_redist.x86.exe).**
 
-- **YSF implemented natives:** https://gist.github.com/AmyrAhmady/94a33fc502c2694032523969e7d2ee02
+- **New implemented natives:** https://gist.github.com/AmyrAhmady/94a33fc502c2694032523969e7d2ee02
 - **List of converted memory hacking plugins:** [open.mp plugin list](https://github.com/openmultiplayer/server-beta/blob/master/PLUGINLIST.md)
 
 ## What am I supposed to do as a tester and how can I help?
