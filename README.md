@@ -13,6 +13,7 @@ While an aim of this project is close feature parity with the existing SA:MP ser
 
 * Pool size functions now return `-1` when there are no entries.
 * Deprecated functions are properly deprecated.
+* `OnPlayerConnect` and `OnPlayerDisconnect` are called when scripts load and unload (thus the players and scripts are connected).  There is a new reason `4` for disconnections in this case.
 
 \* All software has bugs, including this server, that's not a slight against SA:MP specifically.
 
