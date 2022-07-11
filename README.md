@@ -66,9 +66,11 @@ omp-server.exe --script my-mode.amx
 
 This should still be in the `gamemodes/` directory as before.
 
+### Configuration
+
 To get an example `config.json`, just ask for one:
 
-### Linux:
+#### Linux:
 To convert your server.cfg to config.json:
 ```
 ./omp-server --dump-config
@@ -78,7 +80,7 @@ To generate a default config.json:
 ./omp-server --default-config
 ```
 
-Windows:
+#### Windows:
 To convert your server.cfg to config.json:
 ```
 omp-server --dump-config
