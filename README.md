@@ -68,16 +68,24 @@ This should still be in the `gamemodes/` directory as before.
 
 To get an example `config.json`, just ask for one:
 
-Linux:
-
+### Linux:
+To convert your server.cfg to config.json:
 ```
-./omp-server --write-config
+./omp-server --dump-config
+```
+To generate a default config.json:
+```
+./omp-server --default-config
 ```
 
 Windows:
-
+To convert your server.cfg to config.json:
 ```
-omp-server.exe --write-config
+omp-server --dump-config
+```
+To generate a default config.json:
+```
+omp-server --default-config
 ```
 
 ### **SA:MP way of running your server, legacy support**
