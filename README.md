@@ -24,7 +24,7 @@ You can easily set up your server as it's almost like how the SA:MP server works
 **The Windows build requires the [Microsoft Visual C++ Redistributable 2015-2019](https://aka.ms/vs/17/release/vc_redist.x86.exe).**
 
 - **New implemented natives:** https://gist.github.com/AmyrAhmady/94a33fc502c2694032523969e7d2ee02
-- **List of converted memory hacking plugins:** [open.mp plugin list](https://github.com/openmultiplayer/server-beta/blob/master/PLUGINLIST.md)
+- **List of converted libraries:** [open.mp libraries list](https://github.com/openmultiplayer/server-beta/blob/master/PORTED_LIBS.md)
 
 ## What am I supposed to do as a tester and how can I help?
 Firstly, what we want is for you to slowly port your gamemodes and scripts to open.mp, which you normally shouldn't have issues with unless you have memory hacking plugins or we haven't added support for the needed features yet (we have over 150 YSF natives already built in and the rest are coming as well). By running your script with open.mp and connecting to it, you can see if there are any differences and behaviour changes and report them to us properly by giving us enough information to reproduce and fix the issue.
@@ -92,7 +92,7 @@ omp-server --default-config
 
 ### **SA:MP way of running your server, legacy support**
 If you want to go with the way SA:MP works, all you have to do is drop your file structure in your open.mp server folder (or your open.mp files in your SA:MP server root folder), and it will read your `server.cfg` and load your scripts from the `gamemodes` and `filterscripts` folders, and also load legacy plugins from your `plugins` folder. Please note that memory hacking plugins won't work but the commonly used ones should be fine. (i.e: sscanf, streamer, MySQL, discord-connector, crashdetect, etc.)  
-We're working on adding our own versions of most known memory hacking plugins too. (i.e: remaining YSF features, pawn.cmd, pawn.raknet, FCNPC and etc)
+We're working on adding our own versions of most known memory hacking plugins too. (i.e: remaining YSF features, FCNPC and etc)
 
 ## Report bugs and behaviour differences
 You can do that by creating issues in [issues](https://github.com/openmultiplayer/server-beta/issues) but keep in mind you are supposed to use the pre-made templates as much as possible.
