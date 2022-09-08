@@ -30,7 +30,7 @@ native IsPlayerCameraTargetEnabled(playerid);
 native TogglePlayerGhostMode(playerid, bool:toggle);
 native GetPlayerGhostMode(playerid);
 native GetPlayerBuildingsRemoved(playerid);
-native GetPlayerAttachedObject(playerid, index, &modelid, &bone = 0, &Float:fX = 0.0, &Float:fY = 0.0, &Float:fZ = 0.0, &Float:fRotX = 0.0, &Float:fRotY = 0.0, &Float:fRotZ = 0.0, &Float:fSacleX = 0.0, &Float:fScaleY = 0.0, &Float:fScaleZ = 0.0, &materialcolor1 = 0, &materialcolor2 = 0);
+native GetPlayerAttachedObject(playerid, index, &modelid, &bone = 0, &Float:fX = 0.0, &Float:fY = 0.0, &Float:fZ = 0.0, &Float:fRotX = 0.0, &Float:fRotY = 0.0, &Float:fRotZ = 0.0, &Float:fScaleX = 0.0, &Float:fScaleY = 0.0, &Float:fScaleZ = 0.0, &materialcolor1 = 0, &materialcolor2 = 0);
 native SendClientMessagef(playerid, color, const message[], {Float,_}:...);
 native GameTextForPlayerf(playerid, displaytime, style, const message[], {Float,_}:...);
 native SendPlayerMessageToPlayerf(playerid, senderid, const message[], {Float,_}:...);
