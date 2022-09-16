@@ -1,0 +1,7 @@
+{
+	"user": "openmultiplayer",
+	"repo": "server-beta",
+	"dependencies": [
+		"sampctl/samp-stdlib"
+	]
+}
