@@ -1,14 +1,14 @@
 // Player
 native TogglePlayerWidescreen(playerid, bool:set);
 native IsPlayerWidescreenToggled(playerid);
-native GetSpawnInfo(playerid, &teamid, &modelid = 0, &Float:spawn_x = 0.0, &Float:spawn_y = 0.0, &Float:spawn_z = 0.0, &Float:z_angle = 0.0, &weapon1 = 0, &weapon1_ammo = 0, &weapon2 = 0, &weapon2_ammo = 0, &weapon3 = 0, &weapon3_ammo = 0);
+native GetSpawnInfo(playerid, &teamid, &modelid = 0, &Float:fSpawnX = 0.0, &Float:fSpawnY = 0.0, &Float:fSpawnZ = 0.0, &Float:fAngleZ = 0.0, &weapon1 = 0, &weapon1_ammo = 0, &weapon2 = 0, &weapon2_ammo = 0, &weapon3 = 0, &weapon3_ammo = 0);
 native GetPlayerSkillLevel(playerid, skill);
 native GetPlayerWeather(playerid);
 native IsPlayerCheckpointActive(playerid);
 native GetPlayerCheckpoint(playerid, &Float:fX, &Float:fY = 0.0, &Float:fZ = 0.0, &Float:fSize = 0.0);
 native IsPlayerRaceCheckpointActive(playerid);
 native GetPlayerRaceCheckpoint(playerid, &Float:fX, &Float:fY = 0.0, &Float:fZ = 0.0, &Float:fNextX = 0.0, &Float:fNextY = 0.0, &Float:fNextZ = 0.0, &Float:fSize = 0.0);
-native GetPlayerWorldBounds(playerid, &Float:x_max, &Float:x_min = 0.0, &Float:y_max = 0.0, &Float:y_min = 0.0);
+native GetPlayerWorldBounds(playerid, &Float:fMaxX, &Float:fMinX = 0.0, &Float:fMaxY = 0.0, &Float:fMinY = 0.0);
 native IsPlayerInModShop(playerid);
 native GetPlayerSirenState(playerid);
 native GetPlayerLandingGearState(playerid);
@@ -108,7 +108,7 @@ forward OnPlayerClickGangZone(playerid, zoneid);
 
 
 // Gangzone - Player
-native CreatePlayerGangZone(playerid, Float:minx, Float:miny, Float:maxx, Float:maxy);
+native CreatePlayerGangZone(playerid, Float:fMinX, Float:fMinY, Float:fMaxX, Float:fMaxY);
 native PlayerGangZoneDestroy(playerid, zoneid);
 native PlayerGangZoneShow(playerid, zoneid, color);
 native PlayerGangZoneHide(playerid, zoneid);
@@ -170,7 +170,7 @@ native GetPickupPos(pickupid, &Float:fX, &Float:fY = 0.0, &Float:fZ = 0.0);
 native GetPickupModel(pickupid);
 native GetPickupType(pickupid);
 native GetPickupVirtualWorld(pickupid);
-native SetPickupPos(pickupid, Float:X, Float:Y, Float:Z, bool:update=true);
+native SetPickupPos(pickupid, Float:fX, Float:fY, Float:fZ, bool:update=true);
 native SetPickupModel(pickupid, model, bool:update=true);
 native SetPickupType(pickupid, type, bool:update=true);
 native SetPickupVirtualWorld(pickupid, virtualworld);
@@ -207,7 +207,7 @@ native bool:IsValidPlayer3DTextLabel(playerid, PlayerText3D:id);
 native GetPlayer3DTextLabelText(playerid, PlayerText3D:id, text[], len = sizeof(text));
 native GetPlayer3DTextLabelColor(playerid, PlayerText3D:id);
 native GetPlayer3DTextLabelPos(playerid, PlayerText3D:id, &Float:fX, &Float:fY = 0.0, &Float:fZ = 0.0);
-native SetPlayer3DTextLabelDrawDist(playerid, PlayerText3D:id, Float:dist);
+native SetPlayer3DTextLabelDrawDist(playerid, PlayerText3D:id, Float:fDist);
 native Float:GetPlayer3DTextLabelDrawDist(playerid, PlayerText3D:id);
 native bool:GetPlayer3DTextLabelLOS(playerid, PlayerText3D:id);
 native SetPlayer3DTextLabelLOS(playerid, PlayerText3D:id, bool:status);
@@ -240,7 +240,7 @@ native GetVehicleSirenState(vehicleid);
 native GetVehicleLandingGearState(vehicleid);
 native GetVehicleHydraReactorAngle(vehicleid);
 native Float:GetVehicleTrainSpeed(vehicleid);
-native GetVehicleMatrix(vehicleid, &Float:rightX, &Float:rightY = 0.0, &Float:rightZ = 0.0, &Float:upX = 0.0, &Float:upY = 0.0, &Float:upZ = 0.0, &Float:atX = 0.0, &Float:atY = 0.0, &Float:atZ = 0.0);
+native GetVehicleMatrix(vehicleid, &Float:fRightX, &Float:fRightY = 0.0, &Float:fRightZ = 0.0, &Float:fUpX = 0.0, &Float:fUpY = 0.0, &Float:fUpZ = 0.0, &Float:fAtX = 0.0, &Float:fAtY = 0.0, &Float:fAtZ = 0.0);
 
 // Actor
 native GetActorSkin(actorid);
@@ -254,8 +254,8 @@ native bool:ChatTextReplacementToggled();
 
 // Classes
 native GetAvailableClasses();
-native GetPlayerClass(classid, &teamid, &modelid = 0, &Float:spawn_x = 0.0, &Float:spawn_y = 0.0, &Float:spawn_z = 0.0, &Float:z_angle = 0.0, &weapon1 = 0, &weapon1_ammo = 0, &weapon2 = 0, &weapon2_ammo = 0, &weapon3 = 0, &weapon3_ammo = 0);
-native EditPlayerClass(classid, teamid, modelid, Float:spawn_x, Float:spawn_y, Float:spawn_z, Float:z_angle, weapon1, weapon1_ammo, weapon2, weapon2_ammo, weapon3, weapon3_ammo);
+native GetPlayerClass(classid, &teamid, &modelid = 0, &Float:fSpawnX = 0.0, &Float:fSpawnY = 0.0, &Float:fSpawnZ = 0.0, &Float:fAngleZ = 0.0, &weapon1 = 0, &weapon1_ammo = 0, &weapon2 = 0, &weapon2_ammo = 0, &weapon3 = 0, &weapon3_ammo = 0);
+native EditPlayerClass(classid, teamid, modelid, Float:fSpawnX, Float:fSpawnY, Float:fSpawnZ, Float:fAngleZ, weapon1, weapon1_ammo, weapon2, weapon2_ammo, weapon3, weapon3_ammo);
 
 // Weapons
 native GetWeaponSlot(weaponid);
