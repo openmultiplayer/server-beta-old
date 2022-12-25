@@ -37,7 +37,11 @@ native SendPlayerMessageToPlayerf(playerid, senderid, const message[], {Float,_}
 native RemovePlayerWeapon(playerid, weaponid);
 native HidePlayerDialog(playerid);
 native bool:IsPlayerUsingOfficialClient(playerid);
-native bool:AllowPlayerTeleport(playerid, bool:allow);
+
+#if !defined AllowPlayerTeleport
+  native bool:AllowPlayerTeleport(playerid, bool:allow);
+#endif
+
 native bool:IsPlayerTeleportAllowed(playerid);
 native bool:AllowPlayerWeapons(playerid, bool:allow);
 native bool:ArePlayerWeaponsAllowed(playerid);
@@ -274,9 +278,17 @@ native GetRunningTimers();
 native GetVehicles(outputVehicles[], size = sizeof outputVehicles);
 native GetPlayers(outputPlayers[], size = sizeof outputPlayers);
 native GetActors(outputActors[], size = sizeof outputActors);
-native void:AllowAdminTeleport(bool:allow);
+
+#if !defined AllowAdminTeleport
+  native AllowAdminTeleport(bool:allow);
+#endif
+
 native bool:IsAdminTeleportAllowed();
-native void:AllowInteriorWeapons(bool:allow);
+
+#if !defined AllowInteriorWeapons
+  native AllowInteriorWeapons(bool:allow);
+#endif
+
 native bool:AreInteriorWeaponsAllowed();
 native bool:AreAllAnimationsEnabled();
 native void:EnableAllAnimations(bool:enable);
