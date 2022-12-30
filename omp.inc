@@ -292,3 +292,4 @@ native bool:IsAdminTeleportAllowed();
 native bool:AreInteriorWeaponsAllowed();
 native bool:AreAllAnimationsEnabled();
 native void:EnableAllAnimations(bool:enable);
+native GetWeather();
