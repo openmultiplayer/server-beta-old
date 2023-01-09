@@ -1,3 +1,8 @@
+
+# ⚠️⚠️ CAUTION ⚠️⚠️
+# Beta testing phase has finished! now go to https://github.com/openmultiplayer/open.mp and create issues there!
+
+
 # open.mp server open beta test
 
 ## Introduction
